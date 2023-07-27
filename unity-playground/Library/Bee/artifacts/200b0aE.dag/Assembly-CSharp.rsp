@@ -353,6 +353,7 @@
 "Assets/Scenes/Character.cs"
 "Assets/Scenes/LearningCurve.cs"
 "Assets/Scenes/Weapon.cs"
+"Assets/Scripts/ItemRotation.cs"
 -langversion:9.0
 
 /deterministic
