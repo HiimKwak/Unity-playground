@@ -353,7 +353,11 @@
 "Assets/Scenes/Character.cs"
 "Assets/Scenes/LearningCurve.cs"
 "Assets/Scenes/Weapon.cs"
+"Assets/Scripts/CameraBehavior.cs"
+"Assets/Scripts/EnemyBehavior.cs"
+"Assets/Scripts/ItemBehavior.cs"
 "Assets/Scripts/ItemRotation.cs"
+"Assets/Scripts/PlayerBehaviour.cs"
 -langversion:9.0
 
 /deterministic
