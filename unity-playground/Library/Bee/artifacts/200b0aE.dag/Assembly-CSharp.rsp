@@ -356,6 +356,7 @@
 "Assets/Scripts/BulletBehaviour.cs"
 "Assets/Scripts/CameraBehavior.cs"
 "Assets/Scripts/EnemyBehavior.cs"
+"Assets/Scripts/GameBehavior.cs"
 "Assets/Scripts/ItemBehavior.cs"
 "Assets/Scripts/ItemRotation.cs"
 "Assets/Scripts/PlayerBehaviour.cs"
