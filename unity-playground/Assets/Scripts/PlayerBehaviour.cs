@@ -6,9 +6,12 @@ public class PlayerBehaviour : MonoBehaviour
 {
   public float MoveSpeed = 10f;
   public float RotateSpeed = 75f;
+  public GameObject Bullet;
+  public float BulletSpeed = 100f;
 
   private float _vInput;
   private float _hInput;
+  private bool _isShooting;
 
   private Rigidbody _rb;
 
@@ -31,6 +34,7 @@ public class PlayerBehaviour : MonoBehaviour
     _vInput = Input.GetAxis("Vertical") * MoveSpeed;
     _hInput = Input.GetAxis("Horizontal") * RotateSpeed;
     _isJumping |= Input.GetKeyDown(KeyCode.Space);
+    _isShooting |= Input.GetMouseButton(0);
 
     // this.transform.Translate(Vector3.forward * _vInput * Time.deltaTime);
     // this.transform.Rotate(Vector3.up * _hInput * Time.deltaTime);
@@ -50,6 +54,16 @@ public class PlayerBehaviour : MonoBehaviour
       _rb.AddForce(Vector3.up * JumpVelocity, ForceMode.Impulse);
     }
     _isJumping = false;
+
+    if (_isShooting)
+    {
+      GameObject newBullet = Instantiate(Bullet, this.transform.position + new Vector3(0, 0, 1), this.transform.rotation);
+
+      Rigidbody BulletRB = newBullet.GetComponent<Rigidbody>();
+
+      BulletRB.velocity = this.transform.forward * BulletSpeed;
+    }
+    _isShooting = false;
   }
 
   private bool IsGrounded()

@@ -123,6 +123,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 10
   RotateSpeed: 75
+  JumpVelocity: 5
+  DistanceToGround: 0.1
+  GroundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!54 &3270926625020010322
 Rigidbody:
   m_ObjectHideFlags: 0
