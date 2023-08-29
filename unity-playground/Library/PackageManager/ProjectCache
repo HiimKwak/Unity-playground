@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638248567750000000
-    m_Hash: 2362511596
+      ticks: 638283031040000000
+    m_Hash: 338841569
   m_LockFileStatus:
     m_FilePath: /Users/kwak/Documents/study/Unity-playground/unity-playground/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638248567810000000
-    m_Hash: 1613653515
+      ticks: 638283031040000000
+    m_Hash: 4020355179
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,74 @@ m_LocalPackages:
 m_ProjectPath: /Users/kwak/Documents/study/Unity-playground/unity-playground/Packages
 m_EditorVersion: 2022.3.4f1 (35713cd46cd7)
 m_ResolvedPackages:
+- packageId: com.unity.ai.navigation@1.1.4
+  testable: 0
+  isDirectDependency: 1
+  version: 1.1.4
+  source: 1
+  resolvedPath: /Users/kwak/Documents/study/Unity-playground/unity-playground/Library/PackageCache/com.unity.ai.navigation@1.1.4
+  assetPath: Packages/com.unity.ai.navigation
+  name: com.unity.ai.navigation
+  displayName: AI Navigation
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: assets
+  description: High-level NavMesh components for building and using NavMeshes at
+    runtime and at edit time.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-exp.1
+    - 1.0.0-exp.2
+    - 1.0.0-exp.3
+    - 1.0.0-exp.4
+    - 1.1.0-pre.1
+    - 1.1.0-pre.2
+    - 1.1.1
+    - 1.1.3
+    - 1.1.4
+    - 2.0.0-pre.3
+    compatible:
+    - 1.1.4
+    recommended: 1.1.4
+    deprecated: []
+  dependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  resolvedDependencies:
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638224218100000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.ai.navigation.git
+    revision: 3e8d494400ccac6cbd90ee1b474470f4b1299bfa
+    path: 
+  unityLifecycle:
+    version: 1.1.4
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.collab-proxy@2.0.5
   testable: 0
   isDirectDependency: 1
@@ -108,15 +176,17 @@ m_ResolvedPackages:
     - 2.0.3
     - 2.0.4
     - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     compatible:
     - 2.0.5
+    - 2.0.7
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
-    recommended: 2.0.5
+    recommended: 2.0.7
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -377,6 +447,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
+    - 3.2.0-pre.5
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     compatible:
@@ -385,6 +456,7 @@ m_ResolvedPackages:
     - 3.2.0-pre.2
     - 3.2.0-pre.3
     - 3.2.0-pre.4
+    - 3.2.0-pre.5
     - 4.0.0-pre.1
     - 4.0.0-pre.2
     recommended: 3.0.6
@@ -619,6 +691,7 @@ m_ResolvedPackages:
     all:
     - 1.0.0
     - 3.0.0-exp.1
+    - 3.0.0-exp.3
     compatible:
     - 1.0.0
     recommended: 1.0.0
@@ -712,8 +785,10 @@ m_ResolvedPackages:
     - 1.7.8
     - 1.8.0-pre.1
     - 1.8.0
+    - 1.9.0
     compatible:
     - 1.8.0
+    - 1.9.0
     recommended: 1.8.0
     deprecated:
     - 1.8.0-pre.1
@@ -2702,9 +2777,11 @@ m_ResolvedPackages:
     - 2.0.16
     - 2.0.17
     - 2.0.18
+    - 2.0.20
     compatible:
     - 2.0.18
-    recommended: 2.0.18
+    - 2.0.20
+    recommended: 2.0.20
     deprecated: []
   dependencies:
   - name: com.unity.test-framework

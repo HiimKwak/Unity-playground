@@ -22,19 +22,22 @@ public class PlayerBehaviour : MonoBehaviour
   public LayerMask GroundLayer;
   private CapsuleCollider _col;
 
+  private GameBehavior _gameManager;
+
   void Start()
   {
     _rb = GetComponent<Rigidbody>();
     _col = GetComponent<CapsuleCollider>();
-  }
 
+    _gameManager = GameObject.Find("Game_Manager").GetComponent<GameBehavior>();
+  }
 
   void Update()
   {
     _vInput = Input.GetAxis("Vertical") * MoveSpeed;
     _hInput = Input.GetAxis("Horizontal") * RotateSpeed;
     _isJumping |= Input.GetKeyDown(KeyCode.Space);
-    _isShooting |= Input.GetMouseButton(0);
+    _isShooting |= Input.GetMouseButtonDown(0);
 
     // this.transform.Translate(Vector3.forward * _vInput * Time.deltaTime);
     // this.transform.Rotate(Vector3.up * _hInput * Time.deltaTime);
@@ -73,5 +76,13 @@ public class PlayerBehaviour : MonoBehaviour
     bool grounded = Physics.CheckCapsule(_col.bounds.center, capsuleBottom, DistanceToGround, GroundLayer, QueryTriggerInteraction.Ignore);
 
     return grounded;
+  }
+
+  void OnCollisionEnter(Collision collision)
+  {
+    if (collision.gameObject.name == "Enemy")
+    {
+      _gameManager.HP -= 1;
+    }
   }
 }
